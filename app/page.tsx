@@ -11,7 +11,7 @@ import Image from "next/image"
 const MinimalistShowcase = ({ car, index }: { car: (typeof cars)[0]; index: number }) => {
   return (
     <motion.section
-      className={`min-h-screen relative overflow-hidden ${index % 2 === 0 ? "bg-gray-100" : "bg-gray-900"}`}
+      className={`min-h-[120vh] sm:min-h-screen relative overflow-hidden ${index % 2 === 0 ? "bg-gray-100" : "bg-gray-900"}`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -19,31 +19,31 @@ const MinimalistShowcase = ({ car, index }: { car: (typeof cars)[0]; index: numb
     >
       {/* Top Header with decorative lines */}
       <motion.div
-        className="absolute top-16 left-1/2 transform -translate-x-1/2 flex items-center gap-8 z-30"
+        className="absolute top-20 sm:top-16 md:top-20 lg:top-24 xl:top-28 left-1/2 transform -translate-x-1/2 flex items-center gap-4 sm:gap-6 md:gap-8 z-30 px-4"
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         viewport={{ once: true }}
       >
-        <div className={`w-24 h-px ${index % 2 === 0 ? "bg-black" : "bg-white"}`} />
-        <h3 className={`text-lg font-medium tracking-wider ${index % 2 === 0 ? "text-black" : "text-white"}`}>
+        <div className={`w-8 sm:w-12 md:w-16 lg:w-20 xl:w-24 h-px ${index % 2 === 0 ? "bg-black" : "bg-white"}`} />
+        <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-medium tracking-wider ${index % 2 === 0 ? "text-black" : "text-white"}`}>
           Ride of Dreams
         </h3>
-        <div className={`w-24 h-px ${index % 2 === 0 ? "bg-black" : "bg-white"}`} />
+        <div className={`w-8 sm:w-12 md:w-16 lg:w-20 xl:w-24 h-px ${index % 2 === 0 ? "bg-black" : "bg-white"}`} />
       </motion.div>
 
       {/* Giant Brand Typography */}
       <motion.div
-        className="absolute inset-0 flex items-center justify-center z-5"
+        className="absolute top-1/4 left-0 right-0 flex items-center justify-center z-5"
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <h1
-          className={`text-[8rem] md:text-[12rem] lg:text-[16rem] xl:text-[20rem] font-black leading-none select-none ${
+          className={`text-[2.5rem] sm:text-[3.5rem] md:text-[6rem] lg:text-[10rem] xl:text-[14rem] 2xl:text-[18rem] font-black leading-none select-none ${
             index % 2 === 0 ? "text-black" : "text-white"
-          }`}
+          } w-full text-center`}
           style={{
             letterSpacing: "-0.05em",
             textShadow: index % 2 === 0 ? "0 0 100px rgba(0,0,0,0.1)" : "0 0 100px rgba(255,255,255,0.1)",
@@ -55,14 +55,13 @@ const MinimalistShowcase = ({ car, index }: { car: (typeof cars)[0]; index: numb
 
       {/* Car Image positioned over typography */}
       <motion.div
-        className="absolute inset-0 flex items-center justify-center z-15"
-        style={{ transform: "translateY(60px)" }}
+        className="absolute inset-0 flex items-center justify-center z-15 translate-y-8 sm:translate-y-12 md:translate-y-16 lg:translate-y-20 xl:translate-y-24 px-4"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
         whileHover={{ scale: 1.02 }}
       >
-        <div className="relative w-[600px] h-[400px] md:w-[800px] md:h-[500px] lg:w-[1000px] lg:h-[600px]">
+        <div className="relative w-[90vw] h-[130px] sm:w-[280px] sm:h-[180px] md:w-[450px] md:h-[300px] lg:w-[700px] lg:h-[450px] xl:w-[1000px] xl:h-[600px] max-w-[340px] sm:max-w-none">
           <Image
             src={car.images[0] || "/placeholder.svg"}
             alt={`${car.brand} ${car.model}`}
@@ -85,75 +84,75 @@ const MinimalistShowcase = ({ car, index }: { car: (typeof cars)[0]; index: numb
 
       {/* Bottom Left - Model Name */}
       <motion.div
-        className="absolute bottom-32 left-8 z-30"
+        className="absolute bottom-[35vh] sm:bottom-44 md:bottom-48 lg:bottom-52 xl:bottom-56 left-4 sm:left-6 md:left-8 z-30"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.0 }}
         viewport={{ once: true }}
       >
-        <h2 className={`text-4xl md:text-5xl font-light mb-2 ${index % 2 === 0 ? "text-black" : "text-white"}`}>
+        <h2 className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light mb-1 sm:mb-2 ${index % 2 === 0 ? "text-black" : "text-white"}`}>
           {car.brand}
         </h2>
-        <h3 className={`text-5xl md:text-6xl font-black ${index % 2 === 0 ? "text-black" : "text-white"}`}>
+        <h3 className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black ${index % 2 === 0 ? "text-black" : "text-white"}`}>
           {car.model.split(" ")[0]}
         </h3>
       </motion.div>
 
       {/* Bottom Right - Technical Specs */}
       <motion.div
-        className="absolute bottom-32 right-8 z-30"
+        className="absolute bottom-[35vh] sm:bottom-44 md:bottom-48 lg:bottom-52 xl:bottom-56 right-4 sm:right-6 md:right-8 z-30"
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.2 }}
         viewport={{ once: true }}
       >
-        <div className="grid grid-cols-2 gap-8 text-right">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 text-right">
           <div>
-            <div className={`text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
+            <div className={`text-xs sm:text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
               0/100 km/h
             </div>
-            <div className={`text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>
+            <div className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>
               {car.acceleration}
             </div>
           </div>
           <div>
-            <div className={`text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
+            <div className={`text-xs sm:text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
               Power (PS)
             </div>
-            <div className={`text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>{car.power}</div>
+            <div className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>{car.power}</div>
           </div>
           <div>
-            <div className={`text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
+            <div className={`text-xs sm:text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
               Top Speed
             </div>
-            <div className={`text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>{car.topSpeed}</div>
+            <div className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>{car.topSpeed}</div>
           </div>
           <div>
-            <div className={`text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
+            <div className={`text-xs sm:text-sm font-medium mb-1 ${index % 2 === 0 ? "text-gray-600" : "text-gray-400"}`}>
               Price
             </div>
-            <div className={`text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>{car.price}</div>
+            <div className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${index % 2 === 0 ? "text-black" : "text-white"}`}>{car.price}</div>
           </div>
         </div>
       </motion.div>
 
       {/* Bottom Description and Logo */}
       <motion.div
-        className="absolute bottom-8 left-8 right-8 z-30"
+        className="absolute bottom-[15vh] sm:bottom-20 md:bottom-24 lg:bottom-28 xl:bottom-32 left-4 sm:left-6 md:left-8 right-4 sm:right-6 md:right-8 z-30"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.4 }}
         viewport={{ once: true }}
       >
-        <div className="grid md:grid-cols-3 gap-8 items-end">
+        <div className="grid md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-end">
           <div className="md:col-span-2">
-            <p className={`text-sm leading-relaxed ${index % 2 === 0 ? "text-gray-700" : "text-gray-300"}`}>
+            <p className={`text-xs sm:text-sm leading-relaxed ${index % 2 === 0 ? "text-gray-700" : "text-gray-300"}`}>
               {car.description}
             </p>
           </div>
           <div className="flex justify-end">
             <motion.div
-              className={`text-3xl font-black ${index % 2 === 0 ? "text-black" : "text-white"}`}
+              className={`text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-black ${index % 2 === 0 ? "text-black" : "text-white"}`}
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             >
@@ -184,11 +183,11 @@ const MinimalistShowcase = ({ car, index }: { car: (typeof cars)[0]; index: numb
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30"
-        animate={{ y: [0, 8, 0] }}
+        className="absolute bottom-[5vh] sm:bottom-3 md:bottom-4 left-1/2 transform -translate-x-1/2 z-30"
+        animate={{ y: [0, 6, 0] }}
         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
       >
-        <ChevronDown className={`h-5 w-5 ${index % 2 === 0 ? "text-black" : "text-white"} opacity-60`} />
+        <ChevronDown className={`h-4 w-4 sm:h-5 sm:w-5 ${index % 2 === 0 ? "text-black" : "text-white"} opacity-60`} />
       </motion.div>
     </motion.section>
   )
