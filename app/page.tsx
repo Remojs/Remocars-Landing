@@ -55,7 +55,7 @@ const MinimalistShowcase = ({ car, index }: { car: (typeof cars)[0]; index: numb
 
       {/* Car Image positioned over typography */}
       <motion.div
-        className="absolute inset-0 flex items-center justify-center z-15 translate-y-8 sm:translate-y-12 md:translate-y-16 lg:translate-y-20 xl:translate-y-24 px-4"
+        className="absolute inset-0 flex items-center justify-center z-15 translate-y-[10vh] sm:translate-y-[12vh] md:translate-y-[16vh] lg:translate-y-[20vh] xl:translate-y-[24vh] px-4"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
@@ -653,10 +653,10 @@ const HeroSection = () => {
   return (
     <section className="relative h-screen bg-white overflow-hidden">
       <motion.div style={{ y, opacity }} className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 z-10" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
-          alt="Hero Background"
+          src="https://www.cincinnati.com/gcdn/authoring/authoring-images/2024/05/17/PCIN/73731479007-tourque-club-garage-v-1-2.jpg?crop=1706,959,x192,y0"
+          alt="Luxury Garage with Cars"
           fill
           className="object-cover"
           priority
@@ -671,9 +671,9 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="mb-8"
           >
-            <h1 className="text-8xl md:text-9xl font-black text-black mb-4">REMOCARS</h1>
-            <div className="w-32 h-1 bg-black mx-auto mb-6" />
-            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+            <h1 className="text-8xl md:text-9xl font-black text-white mb-4 drop-shadow-2xl">REMOCARS</h1>
+            <div className="w-32 h-1 bg-white mx-auto mb-6" />
+            <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto drop-shadow-lg">
               The best collection in my entire house, quality cars!
             </p>
           </motion.div>
@@ -683,7 +683,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <Button size="lg" className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg">
+            <Button size="lg" className="bg-white text-black hover:bg-gray-200 px-8 py-4 text-lg font-semibold">
               EXPLORE COLLECTION
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -696,7 +696,7 @@ const HeroSection = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
       >
-        <ChevronDown className="h-8 w-8 text-black" />
+        <ChevronDown className="h-8 w-8 text-white" />
       </motion.div>
     </section>
   )
