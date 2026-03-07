@@ -469,14 +469,14 @@ const cars = [
       // Imagen principal para MinimalistShowcase
       "https://pngimg.com/d/Mclaren_PNG43.png",
       // Imágenes para ArtisticCollage
-      "https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/new-imgs/25_720s_coupe_interior_steerinwheel.jpg",
-      "https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/new-imgs/Power_022.jpg",
-      "https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/sustainment-2021/images/McLaren_720s_Shot_14_Static_Exterior_Coupe_Dead_Rear_R4.jpg",
+      "https://www.motormundial.es/wp-content/uploads/2017/07/McLaren-720S-Velocity-by-MSO-interior-salpicadero.jpg",
+      "https://www.ryland.co.uk/mclaren/wp-content/uploads/sites/6/2020/02/rybrook-mclaren-720s-thumb-2-640x360.jpg",
+      "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/03/07/14888979689907.jpg",
       // Imágenes adicionales para CarShowcase (carrusel)
-      "https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/sustainment-2021/images/Design_02.png",
-      "https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/sustainment-2021/images/Design_01.png",
-      "https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/sustainment-2021/images/Design_03.png",
-      "https://mclaren.scene7.com/is/image/mclaren/McLaren_720s_Shot_18_Static_Exterior_Coupe_Rear_Spoiler_R1:crop-16x9?wid=1786&hei=1005",
+      "https://octane.rent/wp-content/uploads/2023/05/mclaren-720s-grey-1.jpg",
+      "https://www.cnet.com/a/img/resize/82292a6112dc12fe65bb5cf245657cca0f2a644d/hub/2021/08/11/afbba228-7d6e-4673-ac9d-63a809f1c707/720s-promo.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "https://octane.rent/wp-content/uploads/2023/05/mclaren-720s-grey-3-600x400.webp",
+      "https://espirituracer.com/archivos/2023/01/mclaren-720s-spider.webp",
     ],
     description:
       "The McLaren 720S represents the pinnacle of supercar engineering, combining lightweight construction with advanced aerodynamics. Its twin-turbo V8 engine delivers breathtaking performance while maintaining everyday usability.",
@@ -569,14 +569,14 @@ const cars = [
       // Imagen principal para MinimalistShowcase
       "https://images.dealer.com/ddc/vehicles/2025/BMW/M3/Sedan/trim_Competition_586734/perspective/side-left/2025_76.png",
       // Imágenes para ArtisticCollage
-      "https://www.bmw.com.ar/content/bmw/marketLATAM/bmw_com_ar/es_AR/all-models/m-series/m3-sedan/2023/bmw-3-series-sedan-m-automobiles-overview/jcr:content/par/multicontent_f19e/tabs/multicontenttab_8838_1533206893/items/smallteaser_ed9a/image.transform/smallteaser/image.1718035424002.jpg",
-      "https://www.bmw.com.ar/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-gallery-impressions-m3-sedan-02_890.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1669713555891.jpg",
-      "https://www.bmw.com.ar/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-gallery-impressions-m3-sedan-04_890.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1669714018645.jpg",
+      "https://car-images.bauersecure.com/wp-images/4179/m3_032.jpg",
+      "https://mediapool.bmwgroup.com/cache/P9/202009/P90398951/P90398951-the-new-bmw-m3-competition-sedan-m-performance-steering-wheel-pro-09-2020-600px.jpg",
+      "https://r44performance.com/cdn/shop/files/BMW-G80-M3-OEM-Alloy-Wheels-Mobile-2_40697383-ca94-4b77-a752-17cb11b93580.jpg?v=1724762403&width=3000",
       // Imágenes adicionales para CarShowcase (carrusel)
-      "https://www.bmw.com.ar/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-mc-product-highlights-m3-competition-hero-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1669709255975.jpg",
-      "https://www.bmw.com.ar/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-mc-product-highlights-m3-sedan-hero-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1669710409577.jpg",
-      "https://www.bmw.com.ar/content/bmw/marketLATAM/bmw_com_ar/es_AR/all-models/m-series/m3-sedan/2023/bmw-3-series-sedan-m-automobiles-overview/jcr:content/par/multicontent_4ed2/tabs/multicontenttab_8838/items/smallteaser_ed9a/image.transform/smallteaser/image.1718035420541.jpg",
-      "https://www.bmw.com.ar/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-gallery-impressions-m3-sedan-03_890.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1669713693768.jpg",
+      "https://www.carscoops.com/wp-content/uploads/2017/07/White-BMW-M3-3--1024x554.jpg",
+      "https://cdn.bmwblog.com/wp-content/uploads/2017/01/Alpine-White-BMW-M3-Build-By-European-Auto-Source-2.jpg",
+      "https://images.unsplash.com/photo-1753477121566-cea7f429fbf6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8",
+      "https://media-r2.carsandbids.com/cdn-cgi/image/width=2080,quality=70/4822e9034b0b6b357b3f73fabdfc10e586c36f68/photos/9abjAXeQ-LeiDAPGXik-(edit).jpg?t=170120179305",
     ],
     description:
       "The BMW M3 Competition is the ultimate expression of the sports sedan. Its twin-turbo inline-six engine, precision handling, and aggressive styling create a perfect balance between track performance and luxury comfort for the discerning driver.",
@@ -655,8 +655,8 @@ const HeroSection = () => {
       <motion.div style={{ y, opacity }} className="absolute inset-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
-          src="https://www.cincinnati.com/gcdn/authoring/authoring-images/2024/05/17/PCIN/73731479007-tourque-club-garage-v-1-2.jpg?crop=1706,959,x192,y0"
-          alt="Luxury Garage with Cars"
+          src="https://images.squarespace-cdn.com/content/v1/6076cae1f4276f5d5098a335/081f3126-273f-4445-9262-a86b4f3f9597/Home+page+image+3.jpg"
+          alt="Remo Cars"
           fill
           className="object-cover"
           priority
