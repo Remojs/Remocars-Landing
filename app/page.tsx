@@ -1035,6 +1035,27 @@ export default function Component() {
           ))}
           <StatsSection />
           <ContactSection />
+          <footer className="py-3 bg-gray-100 border-t border-gray-200">
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
+              <span>developed by</span>
+              <a
+                href="https://interaktivesolutions.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 font-bold tracking-widest text-black hover:text-gray-600 transition-colors"
+              >
+                <Image
+                  src="https://raw.githubusercontent.com/Remojs/Interaktive_QR-Manager/refs/heads/master/frontend/assets/logo.png"
+                  alt="Interaktive"
+                  width={18}
+                  height={18}
+                  className="object-contain"
+                  style={{ filter: "brightness(0)" }}
+                />
+                INTERAKTIVE
+              </a>
+            </div>
+          </footer>
         </main>
       )}
     </>
